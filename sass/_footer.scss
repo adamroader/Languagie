@@ -1,0 +1,25 @@
+.footer {   
+    // position: relative;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primary;
+    
+    &__text {
+        text-align: center;
+        line-height: 1.5;
+
+        @include breakpoint($phone-L) {
+            font-size: 1rem;
+        }
+
+        a {
+            text-transform: uppercase;
+            color: $white;
+            font-weight: 700;
+            
+        }
+    }
+}

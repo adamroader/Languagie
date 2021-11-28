@@ -1,0 +1,86 @@
+.slider {
+  &-wrap {
+    margin-top: 2rem;
+    position: relative;
+    // background-color: $white;
+    height: 30rem;
+    width: 100%;
+    cursor: grab;
+  }
+
+  &-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    
+ 
+  }
+
+  &-inner {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300rem;
+    justify-content: space-between;
+  }
+
+  &-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27rem;
+    height: 98%;
+    top: 1%;
+    border: 1px solid $black;
+    background-color: $primary;
+  }
+
+  h3 {
+    color: $black;
+  }
+
+  &-btn {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+
+    @include breakpoint($phone-S) {
+				width: 60%;	
+			
+		}
+    
+  }
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: -20;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border: 1px solid $white;
+  border-radius: 10%;
+}
+
+.prog-bar-inner {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $primary;
+}
+

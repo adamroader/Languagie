@@ -1,0 +1,131 @@
+.about {
+    padding: 1rem 0 3rem 0px;
+    z-index: 1;
+
+    @include breakpoint($tablet) {
+        padding: 1rem 0 2rem 0px;
+
+               
+        }
+
+    
+
+
+
+    &__box {
+        margin: 0 auto;
+        margin-top: 8rem;
+        // margin-bottom: 10rem;
+
+        @include breakpoint($tablet) {
+        margin-top: 4rem;
+               
+        }
+    }
+
+    &__items {
+        display: flex;
+        align-items: flex-start;
+
+        @include breakpoint($tablet) {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    
+
+   
+}
+
+.item-wrap {
+    filter: drop-shadow(-1px 6px 3px rgba($black, 0.5));
+}
+.item-about {
+
+    padding: 0px 1rem 0px 1rem;
+        flex: 0 1 33.3333%;
+
+       
+        
+        // border: 1px solid $black;
+        margin: 0 .3rem;
+        clip-path: $clip-path;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            transform: translateY(-5%);
+        }
+        @include breakpoint($tablet) {
+            margin: 0;
+            padding: 0;   
+        }
+
+        @include breakpoint($phone-L) {
+        flex: 0 1 100%;   
+        }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem .5rem;
+        // border-bottom: 1px solid $black;
+        background-color: $primary;
+        // background: rgb(224,228,27);
+        // background: linear-gradient(87deg, rgba(224,228,27,1) 0%, rgba(224,228,27,1) 24%, rgba(253,255,132,1) 100%);
+        // color: $black;
+    }
+
+   
+
+    &__title {
+       padding-top: .5rem;
+    }
+
+    &__text {
+        box-sizing: content-box;
+        max-width: 26.2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem 0 3rem;
+        background-color: $black;
+        height: 25rem;
+
+        @include breakpoint($phone-L) {
+            max-width: 45rem;
+            height: 15rem;
+            padding: 0 6rem;
+        }
+
+        @include breakpoint($phone-M) {
+            max-width: 31rem;
+            height: 22rem;
+
+        }
+
+        @include breakpoint($phone-S) {   
+            padding: 0 3rem;
+
+        }
+
+        p {
+            text-align: center;
+            padding: 2rem;
+            color: $white;
+            flex: 1 1 auto;
+        }
+    }
+}
+
+.item-about:last-child {
+    @include breakpoint($tablet) {
+        margin-top: 3rem;
+    }
+}
+
+
+

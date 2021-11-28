@@ -1,0 +1,78 @@
+.main__contacts {
+    position: relative;;
+    height: 500px;
+    padding-top: 1rem;
+
+
+}
+
+.contacts {
+
+    &__link {
+        
+            transition: all 0.3s ease 0s;
+    
+    
+                &:hover {
+    
+                    color: $green;
+                    border-bottom: 1px solid $green;
+                    
+                }
+            
+    }
+
+    &__details {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-align: center;
+
+        
+    }
+
+    &__email {
+        margin-top: 1rem;
+    }
+
+    &__social {
+        margin-top: 2rem;
+        font-size: 3rem;
+
+        a {
+            margin: 0px 10px 0px 10px;
+        }
+    }
+
+    
+    &__map {
+    
+        margin-top: 5rem;
+
+    }
+}
+
+.fa-facebook {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        color: #395693;
+    }
+}
+
+.fa-instagram {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        color: #a534ad;
+    }
+}
+
+.fa-telegram {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        color: #26a1df;
+    }
+}
+
+

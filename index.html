@@ -1,0 +1,289 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Languagie</title>
+  </head>
+  <body class="wrapper">
+    <div id="modal" class="modal">
+      <div class="modal__box">
+        <div class="modal__content">
+          <h2>Оставатьте заявку и мы скоро свяжемся с вами</h2>
+          <div class="modal__close">X</div>
+          <form class="modal__form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Languagie.uz" />
+            <input
+              type="hidden"
+              name="admin_email"
+              value="icrossoverchannel@gmail.com"
+            />
+            <input
+              type="hidden"
+              name="form_subject"
+              value="запрос на обучение"
+            />
+            <!-- END Hidden Required Fields -->
+
+            <input type="text" name="name" placeholder="Имя" required />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Номер телефона"
+              required
+            />
+            <input
+              type="text"
+              name="course"
+              placeholder="На какой курс хотите записаться?"
+              required
+            />
+            <input type="text" name="level" placeholder="Уровень" />
+            <button>Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- HEADER START -->
+    <header id="header" class="header section">
+      <div class="overlay"></div>
+      <div class="header__container _container">
+        <a href="index.html" class="header__logo">Languagie</a>
+        <nav class="header__nav nav">
+          <ul id="list" class="nav__items">
+            <li class="nav__item">
+              <a id="spec" href="#header" class="nav__link active2">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a id="spec2" href="#about" class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#subjects" class="nav__link">Курсы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__languages languages">
+          <ul class="languages__items">
+            <li class="languages__item">
+              <a href="uzversion.html" class="languages__link">UZ</a>
+            </li>
+            <li class="languages__item">
+              <a href="#" class="languages__link active2">RU</a>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="burger__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__text-box _container">
+        <h1 class="header__title">Languagie поможет тебе добиться цели</h1>
+        <div class="header__btn">
+          <a href="#subjects" class="btn center course">Записаться на курс</a>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main id="main" class="main">
+      <!-- ABOUT START -->
+      <section id="about" class="main__about about section">
+        <div class="about _container">
+          <div class="about__title title">
+            <h2>о нас</h2>
+          </div>
+          <div class="about__box">
+            <div class="about__items">
+              <!-- ITEM-1 -->
+              <span class="item-wrap">
+                <div class="about__item item-about">
+                  <div class="item-about__head">
+                    <img
+                      class="item-about__img"
+                      src="imgs/teacher.svg"
+                      alt=""
+                    />
+                    <h4 class="item-about__title">Опытные преподователи</h4>
+                  </div>
+                  <div class="item-about__text">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Saepe doloribus aperiam, ipsum aut numquam nihil cum.
+                      Reiciendis, temporibus mollitia atque tenetur deserunt
+                      sunt nobis necessitatibus ab adipisci odio! Magnam, hic.
+                      Reiciendis, temporibus mollitia atque tenetur deserunt
+                      sunt nobis necessitatibus ab adipisci odio! Magnam, hic.
+                    </p>
+                  </div>
+                </div>
+              </span>
+              <!-- ITEM-1 -->
+              <!-- ITEM-2 -->
+              <span class="item-wrap">
+                <div class="about__item item-about">
+                  <div class="item-about__head">
+                    <img class="item-about__img" src="imgs/fast.svg" alt="" />
+                    <h4 class="item-about__title">Быстрый результат</h4>
+                  </div>
+                  <div class="item-about__text">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Saepe doloribus aperiam, ipsum aut numquam nihil cum.
+                      Reiciendis, temporibus mollitia atque tenetur deserunt
+                      sunt nobis necessitatibus ab adipisci odio! Magnam, hic.
+                    </p>
+                  </div>
+                </div>
+              </span>
+              <!-- ITEM-2 -->
+              <!-- ITEM-3 -->
+              <span class="item-wrap">
+                <div class="about__item item-about">
+                  <div class="item-about__head">
+                    <img class="item-about__img" src="imgs/money.svg" alt="" />
+                    <h4 class="item-about__title">Приемлемые цены</h4>
+                  </div>
+                  <div class="item-about__text">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Saepe doloribus aperiam, ipsum aut numquam nihil cum.
+                      Reiciendis, temporibus mollitia atque tenetur deserunt
+                      sunt nobis necessitatibus ab adipisci odio! Magnam, hic.
+                    </p>
+                  </div>
+                </div>
+              </span>
+              <!-- ITEM-3 -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT END -->
+
+      <!-- SUBJECTS START -->
+      <section id="subjects" class="main__subjects subjects section">
+        <div class="overlay"></div>
+        <div class="_container">
+          <div class="subjects__title title marg">
+            <h2>курсы</h2>
+          </div>
+          <!-- SLIDER START -->
+          <div class="slider-wrap">
+            <div class="slider-box">
+              <div class="slider-inner">
+                <div class="slider-item">
+                  <h3>Slide 1</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 2</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 3</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 4</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 5</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 6</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 7</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 8</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 9</h3>
+                </div>
+                <div class="slider-item">
+                  <h3>Slide 10</h3>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <div class="prog-bar-inner"></div>
+            </div>
+          </div>
+          <!-- SLIDER END -->
+          <div class="slider-btn btn-white">
+            <a href="#modal" class="">Записаться на курс</a>
+          </div>
+        </div>
+      </section>
+      <!-- SUBJECTS END -->
+
+      <!-- CONTACTS START -->
+      <section id="contacts" class="main__contacts contacts section">
+        <div class="contacts _container">
+          <div class="contacts__title title">
+            <h2>контакты</h2>
+          </div>
+          <div class="contacts__details">
+            <ul>
+              <li class="contacts__phone">
+                Телефон: <a class="contacts__link" href="#">+99899 999 99 99</a>
+              </li>
+              <li class="contacts__email">
+                Эмаил:
+                <a class="contacts__link" href="#">Languagie@gmail.com</a>
+              </li>
+              <li class="contacts__social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae9cc0a789aa48dba1d3d95adb8b99cbd6428b9b4b69c134356ab660a5141853c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+      </section>
+      <!-- CONTACTS END -->
+    </main>
+    <!-- MAIN END -->
+    <footer class="footer">
+      <div class="footer__text _container">
+        <p>
+          All rights reserved. Copyright 2021. Designed by
+          <a href="http://paperkite.uz/">paperkite.uz</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>
