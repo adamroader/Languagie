@@ -20,7 +20,7 @@
 .title {
 	display: block;
 	margin: 0 auto;
-	color: $black;
+	color: $text-color;
 	// margin-top: -10rem;
 	// z-index: 100;
 	// position: relative;
@@ -38,7 +38,7 @@
 
 .btn {
 	display: inline-block;
-	color: $black;
+	color: $text-color;
 	background-color: $primary;
 	padding: 2rem 6rem;
 	width: auto;
@@ -48,7 +48,7 @@
 	transition: all .3s ease 0s;
 
 	&:hover {
-		background-color: $green;
+		background-color: lighten($primary, 5);
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 		color: #fff;
 		padding: 2rem 3rem;
@@ -61,7 +61,7 @@
 	display: inline-block;
 	width: 50%;
 	text-align: center;
-	color: $black;
+	color: $text-color;
 	background-color: $white;
 	padding: 2rem;
 	// clip-path: $clip-path;
@@ -70,7 +70,7 @@
 
 	&:hover {
 		cursor: pointer;
-		background-color: $green;
+		background-color:lighten($primary, 5);
 		color: white;
 		
 
@@ -121,14 +121,14 @@
 
 	&__logo {
 		position: relative;
-		color: $white;
+		color: $text-color2;
 		font-size: 2.4rem;
 	}
 
 	&__text-box {
 		position: relative;
 		display: block;
-		color: $white;
+		color: $text-color2;
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
@@ -137,6 +137,7 @@
 	}
 
 	&__title {
+		color: $text-color2;
 		font-size: 3.6rem;
 		margin-top: 7rem;
 		
@@ -209,7 +210,7 @@
 
 	&__item {
 		margin: 2.5rem;
-		color: $white;
+		color: $text-color2;
 	}
 	
 
@@ -258,7 +259,7 @@
 
 	&__item {
 		margin: 2.5rem 1rem;
-		color: $white;
+		color: $text-color2;
 
 		@include breakpoint($phone-M) {
 		margin: 2.5rem .3rem;
@@ -381,3 +382,5 @@
 @import "contacts";
 @import "footer";
 @import "modal";
+@import "thankyou";
+

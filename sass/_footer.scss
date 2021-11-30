@@ -1,5 +1,6 @@
 .footer {   
     // position: relative;
+    color: $text-color;
     padding-top: 20rem;
     padding-bottom: 5rem;
     bottom: 0;
@@ -17,7 +18,7 @@
 
         a {
             text-transform: uppercase;
-            color: $white;
+            color: $text-color2;
             font-weight: 700;
             
         }

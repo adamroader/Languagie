@@ -11,7 +11,7 @@
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
-  background-color: #e0e41b;
+  background-color: #16b93f;
   -webkit-clip-path: polygon(15% 0, 90% 0, 85% 100%, 10% 100%);
           clip-path: polygon(15% 0, 90% 0, 85% 100%, 10% 100%);
 }
@@ -20,7 +20,7 @@
 .btn {
   display: inline-block;
   color: #000;
-  background-color: #e0e41b;
+  background-color: #16b93f;
   padding: 2rem 6rem;
   width: auto;
   font-weight: 600;
@@ -32,7 +32,7 @@
 }
 
 .btn:hover {
-  background-color: #00AF2C;
+  background-color: #19d047;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   color: #fff;
@@ -53,7 +53,7 @@
 
 .btn-white:hover {
   cursor: pointer;
-  background-color: #00AF2C;
+  background-color: #19d047;
   color: white;
 }
 
@@ -103,6 +103,7 @@
 }
 
 .header__title {
+  color: #fff;
   font-size: 3.6rem;
   margin-top: 7rem;
 }
@@ -221,7 +222,7 @@
 }
 
 .nav__link:hover {
-  background-color: #e0e41b;
+  background-color: #16b93f;
 }
 
 @media (max-width: 1040px) {
@@ -275,7 +276,7 @@
 }
 
 .languages__link:hover {
-  background-color: #e0e41b;
+  background-color: #16b93f;
 }
 
 @media (max-width: 500px) {
@@ -349,7 +350,7 @@
 /*-----burger----*/
 /* ---------------------------MEDIA-END ------------------------------------------------- */
 .active2 {
-  background-color: #e0e41b;
+  background-color: #16b93f;
 }
 
 /*-------------------------MAIN-----------------------*/
@@ -393,9 +394,9 @@ html,
 body {
   height: 100%;
   line-height: 1;
-  background: #fafafa;
+  background: #ebebeb;
   font-size: 1.4rem;
-  color: #252b42;
+  color: #000;
   font-weight: 500;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
@@ -554,7 +555,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem .5rem;
-  background-color: #e0e41b;
+  background-color: #16b93f;
 }
 
 .item-about__title {
@@ -573,7 +574,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 3rem 0 3rem;
-  background-color: #000;
+  background-color: black;
   height: 25rem;
 }
 
@@ -616,7 +617,7 @@ html {
 .subjects {
   position: relative;
   padding: 2rem 0 15rem 0px;
-  background-color: #000;
+  background-color: black;
   -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
           clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
   background: url("../imgs/study.jpg");
@@ -667,6 +668,7 @@ html {
 
 .slider-item {
   position: relative;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,12 +681,12 @@ html {
   width: 27rem;
   height: 98%;
   top: 1%;
-  border: 1px solid #000;
-  background-color: #e0e41b;
+  border: 1px solid black;
+  background-color: #16b93f;
 }
 
 .slider h3 {
-  color: #000;
+  color: inherit;
 }
 
 .slider-btn {
@@ -716,7 +718,7 @@ html {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #e0e41b;
+  background-color: #16b93f;
 }
 
 .main__contacts {
@@ -726,6 +728,7 @@ html {
 }
 
 .contacts__link {
+  color: #000;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -786,12 +789,13 @@ html {
 }
 
 .footer {
+  color: #000;
   padding-top: 20rem;
   padding-bottom: 5rem;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #e0e41b;
+  background-color: #16b93f;
 }
 
 .footer__text {
@@ -879,15 +883,15 @@ html {
 
 .modal__close {
   position: absolute;
-  color: #000;
+  color: black;
   top: -13;
-  right: 13;
+  right: 0;
   font-size: 3rem;
   cursor: pointer;
 }
 
 .modal__close:hover {
-  color: #e0e41b;
+  color: #16b93f;
 }
 
 .modal form {
@@ -911,7 +915,7 @@ html {
 
 .modal form input {
   width: 50%;
-  border: 1px solid #000;
+  border: 1px solid black;
   padding: 1rem 1rem;
   margin-top: 1rem;
 }
@@ -924,14 +928,13 @@ html {
 
 .modal form button {
   color: #000;
-  font-weight: 600;
   margin-top: 3rem;
-  background: #e0e41b;
-  padding: 1rem 2rem;
+  background: #16b93f;
+  width: 50%;
+  padding: 1rem 0;
   cursor: pointer;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
 }
@@ -939,6 +942,7 @@ html {
 .modal form button:hover {
   -webkit-transform: translateY(-5%);
           transform: translateY(-5%);
+  background: #19d047;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.8);
 }
@@ -948,5 +952,33 @@ html {
           transform: translateY(2%);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1040px) {
+  .modal form button {
+    width: 100%;
+  }
+}
+
+.thanks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.thanks h2 {
+  font-size: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,8 +15,6 @@
       crossorigin="anonymous"
     />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <title>Languagie</title>
   </head>
   <body class="wrapper">
@@ -25,21 +23,7 @@
         <div class="modal__content">
           <h2>Arizani to'ldiring va biz tiz bilan tez orada bog'lanamiz.</h2>
           <div class="modal__close">X</div>
-          <form class="modal__form">
-            <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="Languagie.uz" />
-            <input
-              type="hidden"
-              name="admin_email"
-              value="icrossoverchannel@gmail.com"
-            />
-            <input
-              type="hidden"
-              name="form_subject"
-              value="запрос на обучение"
-            />
-            <!-- END Hidden Required Fields -->
-
+          <form class="modal__form" action="mail.php" method="POST">
             <input type="text" name="name" placeholder="Ism" required />
             <input
               type="text"
@@ -53,8 +37,8 @@
               placeholder="Qaysi kursda o'qimoqchisiz?"
               required
             />
-            <input type="text" name="level" placeholder="Darajangiz" />
-            <button>Jo'natish</button>
+            <input type="text" name="level" placeholder="Daraja" />
+            <button type="submit">Jo'natish</button>
           </form>
         </div>
       </div>

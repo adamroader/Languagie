@@ -14,8 +14,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 
     <title>Languagie</title>
   </head>
@@ -25,21 +24,7 @@
         <div class="modal__content">
           <h2>Оставатьте заявку и мы скоро свяжемся с вами</h2>
           <div class="modal__close">X</div>
-          <form class="modal__form">
-            <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="Languagie.uz" />
-            <input
-              type="hidden"
-              name="admin_email"
-              value="icrossoverchannel@gmail.com"
-            />
-            <input
-              type="hidden"
-              name="form_subject"
-              value="запрос на обучение"
-            />
-            <!-- END Hidden Required Fields -->
-
+          <form class="modal__form" action="mail.php" method="POST">
             <input type="text" name="name" placeholder="Имя" required />
             <input
               type="text"
@@ -54,7 +39,7 @@
               required
             />
             <input type="text" name="level" placeholder="Уровень" />
-            <button>Отправить</button>
+            <button type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -83,7 +68,7 @@
         <div class="header__languages languages">
           <ul class="languages__items">
             <li class="languages__item">
-              <a href="uzversion.html" class="languages__link">UZ</a>
+              <a href="uz.html" class="languages__link">UZ</a>
             </li>
             <li class="languages__item">
               <a href="#" class="languages__link active2">RU</a>
@@ -282,7 +267,6 @@
       </div>
     </footer>
 
-    <!-- <script src="app.js"></script> -->
     <script src="script.js"></script>
     <script src="slider.js"></script>
   </body>
