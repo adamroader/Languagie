@@ -81,7 +81,12 @@ document.querySelector('.modal__close').addEventListener('click', function () {
 })
 
 
+//-------------PHONE-MASK---------------//
 
+
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask('(99) 999-99-99');
+im.mask(inputs);
 
 
 
