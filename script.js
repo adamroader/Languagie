@@ -70,12 +70,25 @@ document.querySelector('.btn-white').addEventListener('click', function () {
     document.querySelector('.modal').style.display = 'flex';
     document.querySelector('body').style.overflow = 'hidden';
 
+    setTimeout(function () {
+        document.querySelector('.modal__box').style.transform = 'none';
+
+    }, 1)
+
 
 })
 
 document.querySelector('.modal__close').addEventListener('click', function () {
-    document.querySelector('.modal').style.display = 'none';
-    document.querySelector('body').style.overflow = 'visible';
+
+    document.querySelector('.modal__box').removeAttribute('style')
+
+    setTimeout(function () {
+        document.querySelector('.modal').style.display = 'none';
+        document.querySelector('body').style.overflow = 'visible';
+    }, 300)
+
+
+
 
 
 })
